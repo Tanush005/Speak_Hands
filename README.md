@@ -31,6 +31,8 @@ Speech: pyttsx3
 GUI: Tkinter
 
 System Pipeline:
+<img width="1024" height="1536" alt="ChatGPT Image Jul 17, 2025, 03_52_39 PM" src="https://github.com/user-attachments/assets/fa38f655-1b56-4bd6-b06b-af17368dc22d" />
+
 
 Webcam captures hand gesture.
 
