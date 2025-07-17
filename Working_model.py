@@ -17,10 +17,10 @@ hd2 = HandDetector(maxHands=1)
 import tkinter as tk
 from PIL import Image, ImageTk
 
-# Ensure white.jpg exists in the working directory
-if not os.path.exists("white.jpg"):
+# Ensure image.jpg exists in the working directory
+if not os.path.exists("image.jpg"):
     white_img = np.ones((400, 400, 3), dtype=np.uint8) * 255
-    cv2.imwrite("white.jpg", white_img)
+    cv2.imwrite("image.jpg", white_img)
 offset = 29
 
 # Set dark theme and modern button styles for Tkinter
@@ -398,7 +398,7 @@ class Application:
                     x, y, w, h = map['bbox']
                     image = cv2image_copy[y - offset:y + h + offset, x - offset:x + w + offset]
 
-                    white = cv2.imread("white.jpg")
+                    white = cv2.imread("image.jpg")
                     # img_final=img_final1=img_final2=0
                     if image.all:
                         handz = hd2.findHands(image, draw=False, flipType=True)
